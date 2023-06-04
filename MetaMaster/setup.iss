@@ -1,16 +1,21 @@
 #define MyAppName "MetaMaster"
 #define MyAppVersion "1.0.1"
-#define MyAppPublisher "RubyEdge LLC"
+#define MyAppPublisher "DubyaDude @ RubyEdge LLC"
 #define MyAppURL "https://rubyedge.com/"
 
 #define MyAppSourcePath "F:\Projects\MetaMaster\MetaMaster\bin\Release"
 #define MyAppExeName "MetaMaster.exe"
-#define MyAppLib1Name "MetadataExtractor.dll"
-#define MyAppLib2Name "XmpCore.dll"
+#define MyAppMetadataExtractorLibName "MetadataExtractor.dll"
+#define MyAppXmpCoreLibName "XmpCore.dll"
 
 #define MyAppAssetPath "F:\Projects\MetaMaster\MetaMaster\assets"
 #define MyAppIcoName "MetaMaster.ico"             
 #define MyAppUninstallIcoName "MetaMasterUninstall.ico"
+
+#define MyAppLicensesPath "F:\Projects\MetaMaster\licenses"
+#define MyAppMetadataExtractorLicenseName "MetadataExtractor.LICENSE"
+#define MyAppLicenseNoticeName "NOTICE.txt"     
+#define MyAppMetaMasterLicenseName "MetaMaster.LICENSE" 
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
@@ -62,9 +67,15 @@ Name: "turkish"; MessagesFile: "compiler:Languages\Turkish.isl"
 Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 
 [Files]
+; App files
 Source: "{#MyAppSourcePath}\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyAppSourcePath}\{#MyAppLib1Name}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyAppSourcePath}\{#MyAppLib2Name}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyAppSourcePath}\{#MyAppMetadataExtractorLibName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyAppSourcePath}\{#MyAppXmpCoreLibName}"; DestDir: "{app}"; Flags: ignoreversion
+
+; App licenses
+Source: "{#MyAppLicensesPath}\{#MyAppMetadataExtractorLicenseName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyAppLicensesPath}\{#MyAppLicenseNoticeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyAppLicensesPath}\{#MyAppMetaMasterLicenseName}"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
