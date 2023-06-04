@@ -1,0 +1,14 @@
+MetaMaster - https://github.com/DubyaDude/MetaMaster
+MIT - https://raw.githubusercontent.com/DubyaDude/MetaMaster/master/LICENSE
+Copyright (c) 2023 Usman Shafiq
+
+MetadataExtractor - https://github.com/drewnoakes/metadata-extractor-dotnet
+Apache V2 - https://raw.githubusercontent.com/drewnoakes/metadata-extractor-dotnet/master/LICENSE
+Copyright (c) 2002-2019 Drew Noakes and contributors
+Copyright (c) 2014 Imazen LLC (initial conversion from Java to C#)
+- Used for primary function of extracting Metadata
+
+XmpCore - https://github.com/drewnoakes/xmp-core-dotnet
+BSD license - https://developer.adobe.com/xmp/docs/
+Created by Drew Noakes and contributors
+- Dependency of MetadataExtractor
