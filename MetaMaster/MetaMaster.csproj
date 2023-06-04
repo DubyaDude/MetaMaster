@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\MetaMaster.ico" />
+    <Content Include="setup.iss" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

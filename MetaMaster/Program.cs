@@ -7,7 +7,7 @@ namespace MetaMaster
     internal class Program
     {
         public const string AppName = "MetaMaster";
-        public const string AppVersion = "1.0.0";
+        public const string AppVersion = "1.0.1";
 
         static void Main(string[] args)
         {
