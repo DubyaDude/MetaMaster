@@ -6,8 +6,13 @@ namespace MetaMaster
 {
     internal class Program
     {
+        public const string AppName = "MetaMaster";
+        public const string AppVersion = "1.0.0";
+
         static void Main(string[] args)
         {
+            Console.Title = $"{AppName} {AppVersion}";
+
             if (args.Length == 0)
             {
                 Console.WriteLine("File not specified");
