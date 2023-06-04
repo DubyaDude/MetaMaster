@@ -23,14 +23,14 @@ namespace MetaMaster
 
                 foreach (var directory in items)
                 {
-                    Console.WriteLine(Environment.NewLine + directory.Key);
+                    Console.WriteLine($"{Environment.NewLine}{directory.Key}");
                     foreach (var tag in directory.SelectMany(x => x.Tags))
                         Console.WriteLine($" => {tag.Name} = {tag.Description}");
                 }
             }
-            catch (MetadataExtractor.ImageProcessingException exception)
+            catch (ImageProcessingException exception)
             {
-                Console.WriteLine($"Error reading item: {exception.Message}");
+                Console.WriteLine($"{Environment.NewLine}Error reading item: {exception.Message}");
             }
             finally
             {
