@@ -1,6 +1,6 @@
 #define MyAppName "MetaMaster"
 #define MyAppVersion "1.0.1"
-#define MyAppPublisher "RubyEdge LLC"
+#define MyAppPublisher "DubyaDude @ RubyEdge LLC"
 #define MyAppURL "https://rubyedge.com/"
 
 #define MyAppSourcePath "F:\Projects\MetaMaster\MetaMaster\bin\Release"
