@@ -8,6 +8,7 @@
 #define MyAppLib1Name "MetadataExtractor.dll"
 #define MyAppLib2Name "XmpCore.dll"
 
+#define MyAppAssetPath "F:\Projects\MetaMaster\MetaMaster\assets"
 #define MyAppIcoName "MetaMaster.ico"             
 #define MyAppUninstallIcoName "MetaMasterUninstall.ico"
 
@@ -29,8 +30,8 @@ OutputBaseFilename=MetaMasterSetup
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
-SetupIconFile={#MyAppSourcePath}\{#MyAppIcoName}                
-UninstallDisplayIcon={#MyAppSourcePath}\{#MyAppUninstallIcoName}
+SetupIconFile={#MyAppAssetPath}\{#MyAppIcoName}                
+UninstallDisplayIcon={#MyAppAssetPath}\{#MyAppUninstallIcoName}
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
