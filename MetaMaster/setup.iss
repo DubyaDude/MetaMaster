@@ -1,12 +1,10 @@
 #define MyAppName "MetaMaster"
-#define MyAppVersion "1.0.1"
+#define MyAppVersion "1.1.0"
 #define MyAppPublisher "DubyaDude @ RubyEdge LLC"
 #define MyAppURL "https://rubyedge.com/"
 
-#define MyAppSourcePath "F:\Projects\MetaMaster\MetaMaster\bin\Release"
+#define MyAppBuildPath "F:\Projects\MetaMaster\Build"
 #define MyAppExeName "MetaMaster.exe"
-#define MyAppMetadataExtractorLibName "MetadataExtractor.dll"
-#define MyAppXmpCoreLibName "XmpCore.dll"
 
 #define MyAppAssetPath "F:\Projects\MetaMaster\MetaMaster\assets"
 #define MyAppIcoName "MetaMaster.ico"             
@@ -30,7 +28,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
-OutputDir={#MyAppSourcePath}\Installer
+OutputDir={#MyAppBuildPath}\Installer
 OutputBaseFilename={#MyAppName}Setup-{#MyAppVersion}
 Compression=lzma
 SolidCompression=yes
@@ -40,6 +38,7 @@ UninstallDisplayIcon={#MyAppAssetPath}\{#MyAppUninstallIcoName}
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
+Name: "arabic"; MessagesFile: "compiler:Languages\Arabic.isl"
 Name: "armenian"; MessagesFile: "compiler:Languages\Armenian.isl"
 Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
 Name: "bulgarian"; MessagesFile: "compiler:Languages\Bulgarian.isl"
@@ -53,9 +52,9 @@ Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 Name: "german"; MessagesFile: "compiler:Languages\German.isl"
 Name: "hebrew"; MessagesFile: "compiler:Languages\Hebrew.isl"
 Name: "hungarian"; MessagesFile: "compiler:Languages\Hungarian.isl"
-Name: "icelandic"; MessagesFile: "compiler:Languages\Icelandic.isl"
 Name: "italian"; MessagesFile: "compiler:Languages\Italian.isl"
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
+Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
 Name: "norwegian"; MessagesFile: "compiler:Languages\Norwegian.isl"
 Name: "polish"; MessagesFile: "compiler:Languages\Polish.isl"
 Name: "portuguese"; MessagesFile: "compiler:Languages\Portuguese.isl"
@@ -63,14 +62,15 @@ Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
 Name: "slovak"; MessagesFile: "compiler:Languages\Slovak.isl"
 Name: "slovenian"; MessagesFile: "compiler:Languages\Slovenian.isl"
 Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
+Name: "swedish"; MessagesFile: "compiler:Languages\Swedish.isl"
+Name: "tamil"; MessagesFile: "compiler:Languages\Tamil.isl"
+Name: "thai"; MessagesFile: "compiler:Languages\Thai.isl"
 Name: "turkish"; MessagesFile: "compiler:Languages\Turkish.isl"
 Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 
 [Files]
 ; App files
-Source: "{#MyAppSourcePath}\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyAppSourcePath}\{#MyAppMetadataExtractorLibName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyAppSourcePath}\{#MyAppXmpCoreLibName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyAppBuildPath}\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 
 ; App licenses
 Source: "{#MyAppLicensesPath}\{#MyAppMetadataExtractorLicenseName}"; DestDir: "{app}"; Flags: ignoreversion

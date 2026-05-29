@@ -1,6 +1,6 @@
 MetaMaster - https://github.com/DubyaDude/MetaMaster
 MIT - https://raw.githubusercontent.com/DubyaDude/MetaMaster/master/LICENSE
-Copyright (c) 2023 Usman Shafiq
+Copyright (c) 2026 Usman Shafiq
 
 MetadataExtractor - https://github.com/drewnoakes/metadata-extractor-dotnet
 Apache V2 - https://raw.githubusercontent.com/drewnoakes/metadata-extractor-dotnet/master/LICENSE
